@@ -1,0 +1,66 @@
+ /* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive grid for posts */
+.posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.post-card {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media(min-width: 768px) {
+    .post-card {
+        width: 48%;
+    }
+}
+
+@media(min-width: 1024px) {
+    .post-card {
+        width: 30%;
+    }
+}
+
+/* Responsive navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Images */
+.post-image {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+
